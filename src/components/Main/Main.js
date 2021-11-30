@@ -9,14 +9,7 @@ export default function Main() {
     <main>
       <img src={background} alt="farmyard" />
       {animals.map((animal) => (
-        <Animal
-          key={animal.name}
-          type={animal.type}
-          name={animal.name}
-          says={animal.says}
-          top={animal.top}
-          left={animal.left}
-        />
+        <Animal key={animal.type} {...animal} />
       ))}
     </main>
   )

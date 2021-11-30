@@ -12,9 +12,10 @@ export default function Main() {
         <Animal
           key={animal.name}
           type={animal.type}
+          name={animal.name}
           says={animal.says}
           top={animal.top}
-          left={animal.top}
+          left={animal.left}
         />
       ))}
     </main>
